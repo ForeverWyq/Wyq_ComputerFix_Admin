@@ -11,7 +11,7 @@ export default {
 </script>
 <style type="text/css">
 	#app{
-		overflow: hidden;
+		overflow: auto;
 	}
 	/* 内容区边框颜色 */
 	#app .main-container:nth-child(2){

@@ -61,7 +61,7 @@ export default {
   width: 99%;
   background-color: #fff;
   /* 最小高度 vh视框高度*/
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 90px);
   padding: 10px;
   overflow: hidden;
 }

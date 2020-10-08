@@ -51,7 +51,7 @@ export default {
         // 当前页数
         currentPage: 1,
         // 每页显示数据的条数
-        pageSize: 10,
+        pageSize: 8,
         // 数据总条数
 		total: 100,
 		// 表单数据对象 可以做为发送相应网络请求时的参数来使用
@@ -155,7 +155,7 @@ export default {
   width: 99%;
   background-color: #fff;
   /* 最小高度 vh视框高度*/
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 90px);
   padding: 10px;
   overflow: hidden;
 }
