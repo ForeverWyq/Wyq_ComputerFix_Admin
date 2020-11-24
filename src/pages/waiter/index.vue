@@ -87,6 +87,15 @@
 import { mapState, mapActions } from "vuex";
 export default {
   data() {
+    var isphone = (rule, value, callback) => {
+        if (value === '') {
+          callback(new Error('请输入手机号'));
+        } else if (!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(value))) {
+          callback(new Error('请输入正确的手机号!'));
+        } else {
+          callback();
+        }
+    };
     return {
       // 搜索框的内容
       searchInput: "",
@@ -122,7 +131,7 @@ export default {
 					{ required: true, message: '请输入姓名', trigger: 'blur' }
 				], 
 				telephone: [
-					{ required: true, message: '请输入手机号', trigger: 'blur' }
+					{ validator: isphone,  trigger: 'blur' }
 				], 
 				password: [
 					{ required: true, message: '请输入密码', trigger: 'blur' }
